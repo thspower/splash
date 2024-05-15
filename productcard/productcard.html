@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>product card</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		body {
+			display: flex;
+			min-height: 100vh;
+			align-items: center;
+			justify-content: center;
+			background-color: #00aaff;
+			overflow: hidden;
+		}
+
+		.wrapper {
+			position: relative;
+			background: #fff;
+			width: 800px;
+			height: 500px;
+			display: flex;
+			box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+		}
+
+		.imgBox, .cardDetails {
+			width: 50%;
+		}
+
+		.imgBox {
+			position: relative;
+			background: #222;
+			opacity: 0.95;
+		}
+
+		.imgBox::after {
+			position: absolute;
+			content: 'TRENDY';
+			font-size: 6em;
+			font-weight: 900;
+			bottom: 0;
+			color: #fff;
+			opacity: 0.03;
+		}
+
+		.wrapper img {
+			position: absolute;
+			width: 75%;
+			left: -100px;
+			top: -10%;
+			transform: rotate(-10deg);
+		}
+		.content {
+			padding: 50px;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 2.2em;
+			color: #f23778;
+		}
+
+		h2 span {
+			display: block;
+			font-weight: 500;
+			text-transform: capitalize;
+			font-size: .45em;
+			letter-spacing: 3px;
+			color: #222;
+			line-height: -3px;
+			opacity: 0.7;
+		}
+
+		p {
+			font-size: .9em;
+			font-weight: 400;
+			margin-top: 15px;
+			text-align: justify;
+		}
+
+		.buying {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			margin-top: 35px;
+		}
+
+		h3 {
+			font-size: 1.8em;
+			opacity: 0.7;
+		}
+
+		button {
+			border: none;
+			padding: 0px 25px;
+			color: #fff;
+			background-color: #00aaff;
+			font-weight: bold;
+		}
+
+		button:hover {
+			cursor: pointer;
+			background-color: #222;
+		}
+
+		@media (max-width: 830px) {
+			body {
+				padding: 30px;
+			}
+
+			.wrapper {
+				height: 700px;
+				flex-direction: column;
+			}
+
+			.imgBox, .cardDetails {
+				width: 100%;
+				height: 60%;
+			}
+
+			.wrapper img {
+				height: auto;
+				max-height: 70%;
+				max-width: 500px;
+				left: 0px;
+				top: -35px;
+				transform: rotate(0);
+			}
+
+			.imgBox::after {
+				font-size: 20vw;
+				left: 5%;
+				top: 30px;
+			}
+		}
+	</style>
+</head>
+<html>
+	<body>
+		<div class="wrapper">
+			<div class="imgBox"></div>
+			<img src="product.png" alt="product image of roblox noob">
+			<div class="cardDetails">
+				<div class="content">
+					<h2>Trendy Product<br><span>New In Stock</span></h2>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Odio, quod impedit nam. Ab incidunt quaerat ipsam nisi sunt magni libero, obcaecati tempora, eaque dolores distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis quas atque aliquam, cupiditate obcaecati voluptatem corrupti tempora qui voluptatum omnis aspernatur maiores error rerum?</p>
+					<div class="buying">
+						<h3>$3700</h3>
+						<button>Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
