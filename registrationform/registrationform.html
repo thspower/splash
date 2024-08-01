@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>registration form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="http://localhost:8000/images/poppins.css">
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins';
+			font-weight: 400;
+		}
+
+		body {
+			display: flex;
+			min-height: 100vh;
+			align-items: center;
+			justify-content: center;
+			background-color: #E6EDf5;
+		}
+
+		.container {
+			display: flex;
+			position: relative;
+			max-width: 70%;
+			height: 700px;
+			width: 100%;
+			background: #fff;
+			box-shadow: 0 0 45px rgba(0,0,0,0.2);
+		}
+
+		.imgbox {
+			position: relative;
+			width: 100%;
+			height: inherit;
+		}
+
+		img {
+			height: inherit;
+			width: inherit;
+			object-fit: cover;
+		}
+
+		.quotes {
+			width: 80%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+			color: #fff;
+			font-size: 3vw;
+			transform: translate(-50%,-50%);
+		}
+
+		.shadow {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background: #000;
+			opacity: 0.2;
+		}
+
+		.form {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		form {
+			position: relative;
+			width: 80%;
+		}
+
+		form h2 {
+			font-size: 3vw;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			word-spacing: 8px;
+			text-align: center;
+			font-weight: 900;
+			margin-top: 30px;
+			color: #9063CD;
+		}
+
+		.inputfield {
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 70px;
+			margin: 45px 0;
+			border: 2px solid #9063cd;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+
+		input {
+			position: relative;
+			width: inherit;
+			height: inherit;
+			outline: none;
+			border: none;
+			padding: 0 20px;
+			font-size: 1.3em;
+			color: #9063CD;
+		}
+
+		span {
+			width: 65px;
+			text-align: center;
+			font-size: 25px;
+			color: #9063CD;
+			border-right: 2px solid #9063CD;
+			padding: 0 15px;
+		}
+
+		.btn {
+			width: 100%;
+			font-size: 1.8em;
+			padding: 15px;
+			border-radius: 6px;
+			color: #fff;
+			cursor: pointer;
+			letter-spacing: 2px;
+			background-color: #9063CD;
+		}
+
+		@media screen and (max-width: 1080px) {
+			.imgbox {
+				display: none;
+			}
+
+			form h2 {
+				font-size: 6vw;
+			}
+		}
+	</style>
+</head>
+<html>
+	<body>
+		<div class="container">
+			<div class="imgbox">
+				<img src="/images/square.png">
+				<div class="shadow"></div>
+				<div class="quotes">Welcome to the Big Dream</div>
+			</div>
+
+			<div class="form">
+				<form action="#">
+					<h2>registration</h2>
+					<div class="inputfield">
+						<span class="fa fa-user"></span>
+						<input type="text" placeholder="Enter name" required>
+					</div>
+
+					<div class="inputfield">
+						<span class="fa fa-key"></span>
+						<input type="password" placeholder="Enter password" required>
+					</div>
+
+					<div class="inputfield">
+						<span class="fa fa-envelope"></span>
+						<input type="email" placeholder="Enter email" required>
+					</div>
+
+					<input type="submit" value="Submit" class="btn">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
