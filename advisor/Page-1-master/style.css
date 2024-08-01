@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header .box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.header .box-header .navegacao ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.header .box-header .navegacao ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header .banner {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.header .banner div {
+    text-align: center;
+}
+
+/* MAIN */
+
+.main .section-1 {
+    text-align: center;
+    display: grid;
+    gap: 15px;
+    padding-top: 25px;
+}
+
+.main .section-1 .box-section-1 {
+    background: red;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto 25px;
+}
+
+.section-2 .card {
+    border: 1px solid black;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;    
+}
+
+.section-2 .card .box {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.section-2 .card .box-card-1 {
+    border: 1px solid black;
+    width: 180px;
+    text-align: center;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    background-color: blue;
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.section-3 .box-section-3 {
+    border: 1px solid black;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+    background-color: blue;
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.section-4 .box-section-4 {
+    border: 1px solid black;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+

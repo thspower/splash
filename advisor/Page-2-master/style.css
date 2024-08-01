@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.header .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 5px;
+}
+
+
+/* MAIN */
+main .title-main {
+    padding: 10px;
+    width: 50vw;
+    position: relative;
+    left: 2%;
+}
+
+main h2 .span1 {
+    margin-right: 10px;
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 70vw;
+    padding: 10px;
+}
+
+.section-1 .card {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.image {
+    width: 160px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+/* ARTICLE */
+.article {
+    height: 150vh;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    display: grid;
+    gap: 35px;
+    margin-top: 25px;
+}
