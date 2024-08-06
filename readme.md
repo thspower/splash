@@ -14,5 +14,5 @@ Start a file server in the root directory such as with
 
 Add any new pages or components to its own namespaced folder.
 
-The `images` folder contains shared files as a way to lower developer time and reduce total project size. Store general use assets in the images folder.
+The `images` folder contains shared files, such as -- 1x1.png, 2x1.png, circle.png, square.png, and poppins.css.
 
