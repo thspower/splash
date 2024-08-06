@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+
+.header .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .box-header .list {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.header .banner {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.header .banner > div {
+    text-align: center;
+}
+
+.section-1 {
+    border: 1px solid green;
+}
+
+.section-2 .title-section-2 {
+    padding: 5px;
+    text-align: center;
+}
+
+/* CARROSSEL DA SECTION 2 */
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    background-color: red;
+   
+}
+
+.section-3 .card-section-3 {
+    border: 1px solid black;
+    width: 250px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-3 .card-section-3 .content-card {
+    text-align: center;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    padding: 10px;
+}
+
+.section-4 .wrap-content-section-4 {
+   display: flex;
+   gap: 10px;
+   align-self: flex-end;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer .address {
+    display: flex;
+}

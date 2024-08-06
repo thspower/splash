@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.divider {
+    width: 1px;
+    height: 100px;   
+    margin: 0 auto;
+    display: inline-block;
+    border: 1px solid blue;
+}
+
+/* MAIN */
+.main {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* ASIDE */
+.aside {
+    border: 1px solid red;
+    width: 20%;
+}
+
+.section-aside {
+    border: 1px solid blue;
+    text-align: left;
+    padding: 10px;
+}
+
+.content-main {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.box {
+    border: 1px solid black;
+    height: 400px;
+}
+
+.box .div-title {
+    background-color: blue;
+}
+
+.box .content-box {
+    border: 1px solid greenyellow;
+}
