@@ -30,6 +30,8 @@
     ">OK</button>
     <script>
     const cookie = new Map(document.cookie.split('; ').map(v=>v.split(/=(.*)/s).map(decodeURIComponent))).get('cookie');
+        console.log('cookie', cookie)
+        console.log(new Map(document.cookie.split('; ').map(v=>v.split(/=(.*)/s).map(decodeURIComponent))).get('cookie'))
     if (cookie) document.currentScript.parentElement.style.display = 'none';
     </script>
     </div>
