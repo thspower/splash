@@ -1,0 +1,27 @@
+<script>
+function setCookie(key, value){
+    const now = new Date();
+    document.cookie = key +"="+ escape(value) +
+            ";domain="+ window.location.hostname +
+            ";path=/"+
+            ";expires="+now.toUTCString();
+}
+function clearCookie(name) {
+    setCookie(name, "");
+}
+</script>
+
+<button onclick='clearCookie("cookie")'>clear cookies</button>
+
+<script>
+    function loadcookiebanner()
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://raw.githubusercontent.com/thspower/splash/master/cookiebanner/cookiebanner.html', false );
+        xmlHttp.send( null );
+        html = xmlHttp.responseText;
+        const scriptEl = document.createRange().createContextualFragment(html);
+        document.body.append(scriptEl);
+    }
+    window.onload = loadcookiebanner;
+</script>
