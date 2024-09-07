@@ -29,9 +29,7 @@
       color: var(--cookie-banner-button-color, white);
     ">OK</button>
     <script>
-    console.log('anything')
     const cookie = new Map(document.cookie.split('; ').map(v=>v.split(/=(.*)/s).map(decodeURIComponent))).get('cookie');
-        console.log(cookie, 'cookie');
     if (cookie) document.currentScript.parentElement.style.display = 'none';
     </script>
     </div>
