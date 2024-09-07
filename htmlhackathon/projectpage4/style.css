@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    border-bottom: 1px solid black;
+}
+
+.header .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list a {
+    padding: 5px;
+}
+
+.header .navegation .list {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+}
+
+.list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO */
+
+.main {
+    margin-top: 25px;
+}
+
+.main .banner {
+    margin: 0 auto;
+    width: 50vw;
+    text-align: center;
+}
+
+/* SECTION 1 */
+
+.section-1 {
+    padding: 5px;
+    margin-top: 60px;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+    padding: 5px;
+}
+
+.section-2 .box-list-section-2 {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.section-2 .box-list-section-2 .list-section-2 {
+    list-style-type: none;
+}
+
+/* SECTION 3 */
+
+.section-3 {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.section-3 .wraper-title-section-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-3 .box-list-section-3 .list-section-2 {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.section-3 .box-list-section-3 .list-section-2 li {
+    border: 1px solid red;
+    
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+
+}
