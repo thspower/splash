@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./videojs.css" rel="stylesheet" />
+    <link href="../images/poppins.css" rel="stylesheet" />
+    <style>
+      body {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:100vh;
+        width:100%;
+        background-color:lightblue;
+        flex-direction: column;
+        font-family: 'Poppins';
+        margin: 0;
+      }
+
+      .vjs-poster img {
+        object-fit: cover;
+      }
+
+      h1 {
+        margin: 0;
+      }
+      
+      button {
+        margin-top: 2em;
+      }
+    </style>
+</head>
+<body>
+  <h1>Video Player</h1>
+  <p>Video.js and Youtube</p>
+  <video
+    id="vid1"
+    class="video-js vjs-default-skin"
+    controls
+    autoplay
+    width="640" height="320"
+    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=y6Sxv-sUYtM"}] }'
+  >
+  </video>
+
+  <script src="./video.js"></script>
+  <script src="./youtube.min.js"></script>
+
+  <script>
+    // An example of playing with the Video.js javascript API
+    // You can look at the doc there: http://docs.videojs.com/docs/guides/api.html
+    videojs('vid1').ready(function() {
+      var myPlayer = this;
+      document.querySelector('.vjs-loading-spinner').style.display = 'none';
+      const button = document.createElement('button');
+      button.innerHTML = 'Switch video';
+      button.onclick = () => {
+        myPlayer.src({ type: 'video/youtube', src: 'https://youtu.be/r1X5qgU6Css' });
+        setTimeout(() => {
+          myPlayer.pause();
+        }, 1000)
+      }
+      document.body.appendChild(button);
+    });
+  </script>
+</body>
+</html>
