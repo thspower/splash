@@ -17,8 +17,8 @@ function clearCookie(name) {
     function loadcookiebanner()
     {
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", 'https://raw.githubusercontent.com/thspower/splash/master/cookiebanner/cookiebanner.html', false );
-        xmlHttp.send( null );
+        xmlHttp.open("GET", 'https://raw.githubusercontent.com/thspower/splash/master/cookiebanner/cookiebanner.html', false);
+        xmlHttp.send(null);
         html = xmlHttp.responseText;
         const scriptEl = document.createRange().createContextualFragment(html);
         document.body.append(scriptEl);
