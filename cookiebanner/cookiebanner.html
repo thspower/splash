@@ -16,7 +16,10 @@
 <button
 onclick="(function(evt){
   evt.target.parentElement.style.display = 'none';
-  document.cookie = 'cookie=ok';
+  const now = new Date();
+  now.setDate(now.getDate() + 30);
+  document.cookie = `cookie=ok; domain=window.location.hostname; path=/; expires=${now.toUTCString()}`;
+}
 })(arguments[0])"
 style="
   padding: .5em 2em;
