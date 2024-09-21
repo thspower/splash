@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>course</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+		</style>
+		<script src="https://cdn.jsdelivr.net/gh/thspower/freeoss/course-sequencer.js"></script>
+	</head>
+	<body>
+		<style>
+			body {
+				background-color: rgb(170,100,200);
+				padding: 2%;
+			}
+		</style>
+
+		<template id="custom-course">
+			<script id="course" type="application/json">
+				[{
+				    "title": "Front Matter",
+				    "slug": "front-matter",
+				    "content": "<p>Build a SmartSite is a guide to Web Development.</p><p>The purpose of <code>smartsite</code> is to provide interested individuals with a launch point for building a personal web application.</p><p>Before beginning, the individual must be able to:</p><ol type=\"a\">  <li>Download and install programs</li>  <li>Browse the internet</li>  <li>Use the command-line interface</li></ol><p>Using the command-line interface is likely the least familiar of the skills. Luckily, commands that are <strong>necessary</strong> for building the applicationwill be given by the walkthrough. Still, because the command-line will be one of the primary development tools, beginner level proficiency is recommended.</p><p>The guides will present a path of Node.js web development that it known to work.Differences in operating system and setup may require modifications to the instructions.</p><h2 id=\"theprocess\">The Process</h2><p>There is One Step:</p><ol><li>Follow the Walkthrough</li></ol>",
+				    "sectionType": "part",
+				    "sequence": 0,
+				    "parentSectionId": null,
+				    "preview": true
+				}, {
+			        "title": "Introduction",
+			        "slug": "introduction",
+			        "content": "<h2 id=\"howtoreadthewalkthrough\">How to Follow the Walkthrough</h2><p>The Walkthrough is presented in three sections:</p><ul><li>Setup</li><li>Basics</li><li>Features</li></ul><h3 id=\"setup\">Setup</h3><p>The Setup section ensures the developer has the required librariesand programs installed. Anyone who has been developing web applicationsfor any amount of time may already have libraries like Node.js and PostgreSQL installed.Regardless, go through the setup steps to ensure parity with the example application.</p><h3 id=\"thebasics\">The Basics</h3><p>The Basics covers the key building blocks for creating a web application.</p><ul><li>Deliver static HTML pages</li><li>Deliver dynamically rendered content</li><li>Provide interactive front-end content</li><li>Connect to a database</li><li>Save user information in the database</li></ul><p>After completing the Basics, the developer will have completed building afull-fledged Web 2.0 application. With curiosity and initiative, any type of webapplication can be built from the skills and tools outlined in the Basics.</p><h3 id=\"features\">Features</h3><p>The third section, Features, is an exploration of the range of applicationscan be built from the tooling of the Basics. Features contains walkthroughsfor extending the functionality of smartsite.</p><p>The Features are standalone front-end or full-stack modules that can be completed in any order.</p><h2 id=\"howtobegin\">How to Begin</h2><p>Begin with the <strong>Setup</strong> instructions -- install the libraries and run the Node installation commands.</p><p>As you continue through the tutorial, what began as a directory with not much more than a walkthrough blossoms into a featured and interactive web application. This application can serve as your personal site, small-business database system, or become a product prototype.</p><h2 id=\"whatnext\">What Next</h2><p>After you've comepleted building out <code>smartsite</code>, you will have the tools of web development in hand. With the skills, you can:</p><ul><li>Provide value on the internet with your app ideas</li><li>Continue learning web development in pursuit of a career in software</li><li>Prototype the next Big Idea</li></ul><p>If you find yourself building out cool new features in your <code>smartsite</code>, aid future learners by contributing a walkthrough to the <code>smartsite</code> parent repository. Contributions will be added to the <strong>Features</strong> section as an optional <code>smartsite</code> add-on. Thanks in advance!</p><p>Cheers and Happy Building.<br> -The Author</p>",
+			        "sectionType": "chapter",
+			        "sequence": 1,
+			        "parentSection": {
+			          "parentSectionPart": 0,
+			          "parentSectionType": "part",
+			          "parentSectionSequence": 0
+			        }
+			      }]
+			</script>
+		</template>
+
+		<cours-e name="html course"></cours-e>
+		
+		<script>
+			console.log(document.querySelector('cours-e').shadowRoot.querySelector('.ioc'))
+		</script>
+		
+	</body>
+</html>
