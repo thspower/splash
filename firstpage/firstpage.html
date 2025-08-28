@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Purpose First</title>
+  <meta name="description" content="Imagine a world without fear. A world where challenges cease to exist. That world is here. Welcome to Purpose First." />
+  <meta property="og:title" content="Purpose First" />
+  <meta property="og:description" content="Imagine a world without fear. A world where challenges cease to exist. That world is here. Welcome to Purpose First." />
+  <meta name="theme-color" content="#0f0f12" />
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --fg: #f5f7fb;
+      --muted: #b8bec9;
+      --accent: #7dd3fc;
+      --accent-2: #a78bfa;
+      --radius: 20px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#fafafa; --fg:#0b0b10; --muted:#4b5563; }
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--fg);
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(125,211,252,.12), transparent 50%),
+                  radial-gradient(900px 500px at 90% 80%, rgba(167,139,250,.12), transparent 50%),
+                  var(--bg);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    .container {
+      width: min(1100px, 92vw);
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw + 1rem, 4.25rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      margin: 0 0 1.25rem;
+    }
+    h1 span {
+      display: block;
+      margin: 0.5rem 0;
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(12px) scale(.95);
+      animation: fadeUp .9s ease-out forwards;
+    }
+    h1 span:nth-child(1) { animation-delay: .2s; }
+    h1 span:nth-child(2) { animation-delay: .6s; }
+    h1 span:nth-child(3) { animation-delay: 1.0s; }
+    h1 span:nth-child(4) { animation-delay: 1.4s; }
+
+    p.lead { 
+      color: var(--muted);
+      font-size: clamp(1rem, 1.2vw + .6rem, 1.25rem);
+      margin: 0 0 2.25rem;
+      opacity: 0;
+      transform: translateY(8px) scale(.98);
+      animation: fadeUp .9s ease-out forwards 2s;
+    }
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 1.25rem;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #0b0b10;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(125,211,252,.25), 0 6px 18px rgba(167,139,250,.18);
+      transform: translateY(0);
+      transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
+      opacity: 0;
+      animation: fadeUp .9s ease-out forwards 2.4s;
+    }
+    .cta:hover { transform: translateY(-1px); filter: brightness(1.08); }
+    .cta:active { transform: translateY(1px); }
+
+    .card {
+      display: inline-block;
+      padding: 1rem 1.25rem;
+      border-radius: calc(var(--radius) - 4px);
+      background: rgba(255,255,255,.04);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      color: var(--muted);
+      font-size: .9rem;
+      margin-top: 1.25rem;
+      opacity: 0;
+      animation: fadeUp .9s ease-out forwards 2.8s;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Decorative orbs */
+    .orb {
+      position: absolute; inset: auto auto -120px -120px; width: 280px; height: 280px;
+      background: radial-gradient(circle at 30% 30%, rgba(125,211,252,.45), transparent 60%);
+      filter: blur(30px); opacity: .65; pointer-events: none;
+      animation: float 12s ease-in-out infinite;
+    }
+    .orb.two {
+      inset: -140px -120px auto auto; width: 320px; height: 320px;
+      background: radial-gradient(circle at 70% 60%, rgba(167,139,250,.45), transparent 60%);
+      animation-duration: 14s;
+    }
+    @keyframes float { 0%,100%{ transform: translateY(0) } 50% { transform: translateY(-12px) } }
+
+    footer { position: fixed; bottom: 14px; width: 100%; text-align: center; color: var(--muted); font-size: .85rem; }
+    footer a { color: inherit; text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <div class="orb"></div>
+  <div class="orb two"></div>
+  <main class="container" role="main">
+    <h1>
+      <span>Imagine a world without fear</span>
+      <span>A world where challenges cease to exist</span>
+      <span>That world is here</span>
+      <span>Welcome to <em>Purpose First</em></span>
+    </h1>
+    <p class="lead">A single, focused invitation to live with intention.</p>
+    <a class="cta" href="#enter" aria-label="Enter Purpose First">Enter Purpose First</a>
+    <div class="card" aria-hidden="true">No cookies. No clutter. Just purpose.</div>
+  </main>
+  <footer>
+    © <span id="y"></span> Purpose First · Built with clarity and care
+  </footer>
+  <script>
+    // Set year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
